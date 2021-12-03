@@ -31,7 +31,7 @@ namespace Fungus
             if (virtualCamera == null)
                 return "Error: No VirtualCamera specified";
 
-            return targetLookAt.Value.ToString();
+            return $"Set {virtualCamera.name} look at to {targetLookAt.Value}";
         }
 
         public override Color GetButtonColor()

@@ -62,7 +62,7 @@ namespace Fungus
             if (virtualCamera == null)
                 return "Error: No VirtualCamera specified";
 
-            return $"{targetPosition.Value} {positionUnits}";
+            return $"Set {virtualCamera.name} path position to {targetPosition.Value} {positionUnits}";
         }
 
         public override bool HasReference(Variable variable)

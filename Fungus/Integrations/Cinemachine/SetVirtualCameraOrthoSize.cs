@@ -51,7 +51,7 @@ namespace Fungus
             if (virtualCamera == null)
                 return "Error: No VirtualCamera specified";
 
-            return targetOrthoSize.Value.ToString();
+            return $"Set {virtualCamera.name} ortho size to {targetOrthoSize.Value}";
         }
 
         public override bool HasReference(Variable variable)

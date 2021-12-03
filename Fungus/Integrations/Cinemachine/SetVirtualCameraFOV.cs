@@ -54,7 +54,8 @@ namespace Fungus
             if (targetFOV.Value > 179 || targetFOV < 1)
                 return "Error: TargetDutch must be between 1 and 179";
 
-            return targetFOV.Value.ToString();
+            var summary = useTween ? "Tween " : "Set ";
+            return $"{summary}{virtualCamera.name} FOV to {targetFOV.Value}";
         }
 
         public override bool HasReference(Variable variable)

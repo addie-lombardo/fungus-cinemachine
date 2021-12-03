@@ -33,7 +33,8 @@ namespace Fungus
             if (virtualCamera == null)
                 return "Error: No VirtualCamera specified";
 
-            return targetProfile != null ? targetProfile.name : "none";
+            var noiseProfile = targetProfile != null ? targetProfile.name : "none";
+            return $"Set {virtualCamera.name} noise profile to {noiseProfile}";
         }
     }
 }

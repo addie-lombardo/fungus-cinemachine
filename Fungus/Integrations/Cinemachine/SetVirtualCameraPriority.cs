@@ -31,7 +31,7 @@ namespace Fungus
             if (virtualCamera == null)
                 return "Error: No VirtualCamera specified";
 
-            return priority.Value.ToString();
+            return $"Set {virtualCamera.name} priority to {priority.Value}";
         }
 
         public override Color GetButtonColor()

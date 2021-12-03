@@ -53,8 +53,9 @@ namespace Fungus
                 return "Error: No VirtualCamera specified";
             if (targetDutch.Value > 180 || targetDutch < -180)
                 return "Error: TargetDutch must be between -180 and 180";
-
-            return targetDutch.Value.ToString();
+                
+            var summary = useTween ? "Tween " : "Set ";
+            return $"{summary}{virtualCamera.name} dutch to {targetDutch.Value}";
         }
 
         public override bool HasReference(Variable variable)

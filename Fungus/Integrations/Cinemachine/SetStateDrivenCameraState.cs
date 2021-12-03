@@ -52,7 +52,7 @@ namespace Fungus
             if (string.IsNullOrWhiteSpace(animatorState))
                 return "Error: No AnimatorState specified";
 
-            return animatorState.Value;
+            return $"Set {stateDrivenCamera.name} state to {animatorState.Value}";
         }
 
         public override Color GetButtonColor()
