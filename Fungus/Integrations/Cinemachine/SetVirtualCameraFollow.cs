@@ -31,7 +31,8 @@ namespace Fungus
             if (virtualCamera == null)
                 return "Error: No VirtualCamera specified";
 
-            return $"Set {virtualCamera.name} follow to {targetFollow.Value}";
+            var follow = targetFollow.Value ? targetFollow.Value.name : "null";
+            return $"Set {virtualCamera.name} follow to {follow}";
         }
 
         public override Color GetButtonColor()
