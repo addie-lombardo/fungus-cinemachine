@@ -11,7 +11,7 @@ namespace Fungus
     {
         [Space]
         [Tooltip("1,179")]
-        [SerializeField] private FloatData targetFOV;
+        [SerializeField] private FloatData targetFOV = new FloatData(60f);
         
         public override void OnEnter()
         {

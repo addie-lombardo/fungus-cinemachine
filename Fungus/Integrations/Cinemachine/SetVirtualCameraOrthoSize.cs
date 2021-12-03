@@ -10,7 +10,7 @@ namespace Fungus
     public class SetVirtualCameraOrthoSize : BaseTweenableCinemachineVirtualCameraComponent
     {
         [Space]
-        [SerializeField] private FloatData targetOrthoSize;
+        [SerializeField] private FloatData targetOrthoSize = new FloatData(5f);
         
         public override void OnEnter()
         {
